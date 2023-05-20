@@ -1,0 +1,48 @@
+.contact-box{
+    height: 40px;
+    width: 480px;
+    border: 1px solid gray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+}
+.contact-box input{
+    height: 35px;
+    width: 50%;
+    margin-left: 5px;
+    border: none;
+    outline: none;
+   
+
+}
+
+
+
+#error,#error2,#error3,#error4{
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+.text-box{
+    height: 120px;
+    width: 480px;
+    border: 1px solid gray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:10px 0;
+}
+textarea{
+    height: 110px;
+    width: 50%;
+    margin-left: 5px;
+    border: none;
+    outline: none;
+}
+
+@media(max-width:700px){
+    .contact-box, .text-box{
+        width: 320px;
+    }
+}

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css">
+    <link rel="stylesheet" href="contact.css">
+
+</head>
+<body>
+
+    <div class="nav">
+        <div class="logo">
+            <img src="logo.jpeg" alt="">
+            <h2>Cool Logo</h2>
+        </div>
+
+        <ul id="navlink">
+            <p class="menu" onclick="CloseMenu()">X</p>
+            <li><a href="homepage.html">home</a></li>
+            <li><a href="about.html">about</a></li>
+            <li class="served"><a href="">service</a>
+                <div class="drop-service">
+                    <a href="next.html">
+                        <div class="served-box">
+                            <img src="logo.jpeg" alt="">
+                            <h2>Service sublink</h2>
+                        </div>
+                    </a>
+                    <a href="next.html">
+                        <div class="served-box">
+                            <img src="logo.jpeg" alt="">
+                            <h2>Service sublink</h2>
+                        </div>
+                    </a>
+                    <a href="next.html">
+                        <div class="served-box">
+                            <img src="logo.jpeg" alt="">
+                            <h2>Service sublink</h2>
+                        </div>
+                    </a>
+                    <a href="next.html">
+                        <div class="served-box">
+                            <img src="logo.jpeg" alt="">
+                            <h2>Service sublink</h2>
+                        </div>
+                    </a>
+                </div>
+            </li>
+            <li><a href="contact.html">contact</a></li>
+        </ul>
+        <p class="menu" onclick="OpenMenu()">=</p>
+    </div>
+
+   
+
+
+    <br><br>
+
+    <div class="hero" style="justify-content: space-around;">
+        <div class="box hero-img">
+            <img src="logo.jpeg" class="anim" alt="">
+        </div>
+        
+        <form action="">
+            <div class="box anim">
+                <h1 style="font-size: 40px;">Contact Us.</h1>
+                
+                    <div class="contact-box " id="box">
+                        <input type="text" name="" id="name" placeholder="Name" onkeyup="validateName()" required>
+                        <span id="error"></span>
+                    </div>
+                    <div class="contact-box" id="box2">
+                        <input type="email" name="" id="name2" placeholder="Email" onkeyup="validateName2()" required>
+                        <span id="error2"></span>
+                    </div>
+                    <div class="contact-box" id="box3">
+                        <input type="password" name="" id="name3" placeholder="Password" onkeyup="validateName3()" required>
+                        <span id="error3"></span>
+                    </div>
+                    <div class="text-box" id="box4">
+                        <textarea name="" id="name4" cols="30" rows="10" placeholder="Message" onkeyup="validateName4()" required></textarea>
+                        <span id="error4"></span>
+                    </div>
+        
+                    <button class="hero-btn" > Submit</button>
+                
+            </div>
+        </form>
+       
+    </div>
+
+    <br><br>
+
+
+
+
+
+    <div class="footer">
+        &copy Footer description
+    </div>
+
+
+    <script>
+        let error = document.getElementById('error');
+        let error2 = document.getElementById('error2');
+        let error3 = document.getElementById('error3');
+        let error4= document.getElementById('error4');
+        let box = document.getElementById('box');
+        let box2 = document.getElementById('box2');
+        let box3 = document.getElementById('box3');
+        let box4 = document.getElementById('box4');
+
+        function validateName(){
+            const name = document.getElementById('name').value;
+
+            if(name.length == 0){
+                error.innerHTML = "name is required!";
+                box.style.borderColor = "#ff5925";
+                return false;
+            }
+            else{
+                error.innerHTML = "valid";
+                box.style.borderColor = "#26d730";
+                return true;
+            }
+        }
+        function validateName2(){
+            const name = document.getElementById('name2').value;
+
+            if(name.length == 0){
+                error2.innerHTML = "email is required!";
+                box2.style.borderColor = "#ff5925";
+                return false;
+            }
+            else{
+                error2.innerHTML = "valid";
+                box2.style.borderColor = "#26d730";
+                return true;
+            }
+        }
+        function validateName3(){
+            const name = document.getElementById('name3').value;
+
+            if(name.length == 0){
+                error3.innerHTML = "password is required!";
+                box3.style.borderColor = "#ff5925";
+                return false;
+            }
+            else{
+                error3.innerHTML = "valid";
+                box3.style.borderColor = "#26d730";
+                return true;
+            }
+        }
+        function validateName4(){
+            const name = document.getElementById('name4').value;
+
+            if(name.length == 0){
+                error4.innerHTML = "message is required!";
+                box4.style.borderColor = "#ff5925";
+                return false;
+            }
+            else{
+                error4.innerHTML = "valid";
+                box4.style.borderColor = "#26d730";
+                return true;
+            }
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        let navlink = document.getElementById('navlink');
+
+        function OpenMenu(){
+            navlink.style.top = "0";
+        }
+        function CloseMenu(){
+            navlink.style.top = "-850px";
+        }
+        
+    </script>
+    
+</body>
+</html>

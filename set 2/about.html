@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css">
+
+</head>
+<body>
+
+    <div class="nav">
+        <div class="logo">
+            <img src="logo.jpeg" alt="">
+            <h2>Cool Logo</h2>
+        </div>
+
+        <ul id="navlink">
+            <p class="menu" onclick="CloseMenu()">X</p>
+            <li><a href="homepage.html">home</a></li>
+            <li><a href="about.html">about</a></li>
+            <li class="served"><a href="">service</a>
+                <div class="drop-service">
+                    <a href="next.html">
+                        <div class="served-box">
+                            <img src="logo.jpeg" alt="">
+                            <h2>Service sublink</h2>
+                        </div>
+                    </a>
+                    <a href="next.html">
+                        <div class="served-box">
+                            <img src="logo.jpeg" alt="">
+                            <h2>Service sublink</h2>
+                        </div>
+                    </a>
+                    <a href="next.html">
+                        <div class="served-box">
+                            <img src="logo.jpeg" alt="">
+                            <h2>Service sublink</h2>
+                        </div>
+                    </a>
+                    <a href="next.html">
+                        <div class="served-box">
+                            <img src="logo.jpeg" alt="">
+                            <h2>Service sublink</h2>
+                        </div>
+                    </a>
+                </div>
+            </li>
+            <li><a href="contact.html">contact</a></li>
+        </ul>
+        <p class="menu" onclick="OpenMenu()">=</p>
+    </div>
+
+   
+
+
+    <br><br>
+
+    <div class="hero" style="justify-content: space-around;">
+        <div class="box hero-img anim">
+            <img src="logo.jpeg" alt="">
+        </div>
+        <div class="box anim">
+            <h1 style="font-size: 40px;" class="anim">Lorem ipsum dolor <br> consectetur.</h1>
+            <p class="anim">Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br>
+             Reprehenderit necessitatibus maiores unde, at cumque error  <br>
+             dolor ipsa amet eum consequatur facere enim molestias <br><br>
+             Reprehenderit necessitatibus maiores unde, at cumque error  <br>
+             dolor ipsa amet eum consequatur facere enim molestias <br>
+             perspiciatis quidem asperiores totam ducimus! Eveniet.</p>
+
+        </div>
+       
+    </div>
+
+    <div class="box2 anim">
+        <h1 class="anim">Lorem ipsum, dolor sit </h1>
+        <p class="anim">Lorem ipsum dolor sit amet consectetur adipisicing elit. commodi ullam in soluta exercitationem,<br>
+           Laborum pariatur temporibus commodi ullam in soluta exercitationem,
+        </p>
+
+        <button class="hero-btn anim" > View More</button>
+    </div>
+
+    <br><br>
+
+    <div class="container">
+        <div class="cart" style="height: 300px; width: 300px;"><img src="logo.jpeg" alt=""></div>
+        <div class="cart" style="height: 300px; width: 300px;"><img src="logo.jpeg" alt=""></div>
+        <div class="cart" style="height: 300px; width: 300px;"><img src="logo.jpeg" alt=""></div>
+
+        
+    </div>
+
+
+    <br><br>
+
+    <div class="footer">
+        &copy Footer description
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        let navlink = document.getElementById('navlink');
+
+        function OpenMenu(){
+            navlink.style.top = "0";
+        }
+        function CloseMenu(){
+            navlink.style.top = "-850px";
+        }
+        
+    </script>
+    
+</body>
+</html>
